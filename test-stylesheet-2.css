@@ -11,9 +11,9 @@
 
 @font-face {
     font-family: 'instrument';
-src: url('fonts/InstrumentSerif-Regular.otf') format('otf'), /* Modern browsers */
-     url('fonts/InstrumentSerif-Regular.otf') format('otf'),   /* Fallback */
-     url('fonts/InstrumentSerif-Regular.otf') format('truetype'); /* Legacy */
+src: url('InstrumentSerif-Regular.otf') format('otf'), /* Modern browsers */
+     url('InstrumentSerif-Regular.otf') format('otf'),   /* Fallback */
+     url('InstrumentSerif-Regular.otf') format('truetype'); /* Legacy */
 font-weight: normal;
 font-style: normal;
 }
