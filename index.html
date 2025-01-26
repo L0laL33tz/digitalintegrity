@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Column Grid</title>
+  <link rel="stylesheet" href="test-stylesheet-2.css">
+</head>
+
+<body>
+
+<div id="nav">
+  <div class="grid-container sticky-item">
+    <div class="grid-item item01"><a href="index.html/#contact" style="cursor:pointer"><img src="stoerer.svg"/>Get involved</a></div>
+    <div class="grid-item item02"><a href="index.html" style="cursor:pointer"><h1><span class="italic">The</span> Right <span class="italic">to</span> Digital Integrity</h1></a></div>
+    <div class="grid-item item03"><div class="nav-button" onclick="toggleMenu()">Menu</div></div>
+  </div>
+
+  <div id="menu">
+    <div id="ul">
+        <h1><a href="index.html" style="cursor:pointer">Home</a></h1>
+        <h1><a href="index.html/#news" style="cursor:pointer">News</a></h1>
+        <h1><a href="index.html/#contact" style="cursor:pointer">Get Involved</a></h1>
+        <h1><a href="mailto:info@privacyindex.net" style="cursor:pointer">Contact</a></h1>
+    </div>
+  </div>
+</div>
+  
+  <div class="grid-container-hero">
+      <div><h2>A digital society needs a digital constitution.</h2></div>
+      <p class="hero">The Right to Digital Integrity is an international, grassroots movement to enshrine the protection of your data as a fundamental right in the constitution.</p>
+  </div>
+
+  <div class="hero-mobile">
+    <div class="content">
+        <h2 class="mobile">A digital society needs a digital constitution.</h2></div>
+      <p class="hero-mobile-content-box">The Right to Digital Integrity is an international, grassroots movement to enshrine the protection of your data as a fundamental right in the constitution.</p>
+    </div>
+  </div>
+
+  <div class="right-column">
+    <div id="news" class="news">
+        <div class="news-desk"><a href="https://www.strasbourg.eu/motion/-/asset_publisher/wNrYOPk7d9X8/content/droit-integrite-numerique-preservation-acces" target="blank"><img class="news" src="strasbourg.jpg"/><p class="mobile">Strasbourg: Declaration on the Right to Digital Integrity</a></p><p class="mobile-excerpt">Strasbourg City incorporates the right to digital integrity of people in its main principles</p></div>
+        <div class="news-desk"><a href="https://verfassungsfreunde.ch/en/kanton-neuenburg-verankert-digitale-integritaet-in-der-verfassung/" target="blank"><img class="news" src="ch.png"/><p class="mobile">Canton of Neuchâtel enshrines digital integrity in the constitution</a></p><p class="mobile-excerpt">The right to digital integrity is now officially enshrined in the cantonal constitution of the canton of Neuchâtel.</p></div>
+        <div class="news-desk"><a href="https://www.administration-numerique-suisse.ch/fr/blog/10-was-bedeutet-das-recht-auf-digitale-unversehrtheit" target="blank"><img class="news" src="geneva.jpg"/><p class="mobile">Geneva incorporates Right to Digital Integrity</a></p><p class="mobile-excerpt">What the new constitutional right means for you</p></div>
+        <div class="news-desk"><a href="https://www.letemps.ch/cyber/donnees-personnelles/le-conseil-federal-devra-se-pencher-sur-le-droit-a-l-integrite-numerique" target="blank"><img class="news" src="letemps.jpg"/><p class="mobile">Swiss Federal Council will have to consider the Right to Digital Integrity</a></p><p class="mobile-excerpt">The Political Institutions Commission of the National Council is responsible for the government to draw up a report on the issue</p></div>
+        <div class="news-desk"><a href="https://www.tagesanzeiger.ch/digitalisierung-piraten-reichen-volksinitiative-fuer-digitale-integritaet-ein-848899019524" target="blank"><img class="news" src="ta.jpg"/><p class="mobile">Zurich officiates initiative for Right to Digital Integrity</a></p><p class="mobile-excerpt">The canton of Zurich has validated the initiative Right to Digital Integrity with over 10,000 signatures</p></div>
+        <div class="news-desk"><a href="https://www.zentralplus.ch/politik/kein-zwang-alles-digital-machen-zu-muessen-2557793/" target="blank"><img class="news" src="zplus.jpg"/><p class="mobile">Party wants to bring the Right to Digital Integrity to Zug</a></p><p class="mobile-excerpt">The Zug party "Parat" wants to define digital integrity in the cantonal constitution</p></div>
+        <div class="news-desk"><a href="https://www.nzz.ch/schweiz/die-romandie-mausert-sich-zur-weltweiten-pionierin-eines-rechts-auf-digitale-integritaet-ld.1857060" target="blank"><img class="news" src="nzz01.jpg"/><p class="mobile">Right to Digital Integrity: Romandy is a worldwide pioneer</a></p><p class="mobile-excerpt">The right to an offline life and much more: Romandy is emerging as a global pioneer of a new digital fundamental right.</p></div>
+        <div class="news-desk"><a href="https://www.nzz.ch/zuerich/initiative-fuer-digitale-integritaet-angst-vor-ki-beschert-kleinpartei-erfolg-ld.1844613" target="blank"><img class="news" src="nzz01.jpg"/><p class="mobile">Initiative for Digital Integrity: Fear of AI brings success to a small party</a></p><p class="mobile-excerpt">Employees do not want AI to decide on their job applications. In Zurich, a small party is celebrating success due to such concerns.</p></div>
+      </div>
+</div>
+
+<div id="contact" class="footer">
+  <div class="footer-content">
+    <div class="footer-box-hl">Get Involved</div>
+    <div class="footer-box-01">Want to start the Right to Digital Integrity in your country or have your event featured on this site?</div>
+    <div class="footer-button">Write us</div>
+  </div>
+</div>
+
+</body>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById('menu');
+    var body = document.body;
+    var links = document.querySelectorAll('a');
+    var headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+    var elementsWithBorders = document.querySelectorAll('*');
+    var stoererImg = document.querySelector('img[src="stoerer.svg"]'); // Select the image by its src
+
+    if (menu.style.opacity === "0" || menu.style.opacity === "") {
+      menu.style.opacity = "1";
+      menu.style.pointerEvents = "auto";
+
+      body.style.color = "white";
+      links.forEach(link => link.style.color = "white");
+      headings.forEach(heading => heading.style.color = "white");
+      menu.style.backgroundColor = "black";
+
+      elementsWithBorders.forEach(element => {
+        if (element.style.border) {
+          element.style.borderColor = "white";
+        }
+      });
+
+      // Change the image source to stoerer-white.svg when menu is active
+      if (stoererImg) {
+        stoererImg.src = "stoerer-white.svg"; // Update the image source
+      }
+    } else {
+      menu.style.opacity = "0";
+      menu.style.pointerEvents = "none";
+
+      body.style.color = "";
+      links.forEach(link => link.style.color = "");
+      headings.forEach(heading => heading.style.color = "");
+      menu.style.backgroundColor = "";
+
+      elementsWithBorders.forEach(element => {
+        if (element.style.border) {
+          element.style.borderColor = "";
+        }
+      });
+
+      // Reset the image source back to stoerer.svg when menu is closed
+      if (stoererImg) {
+        stoererImg.src = "stoerer.svg"; // Revert the image source
+      }
+    }
+  }
+
+  document.querySelectorAll('#menu a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      var menu = document.getElementById('menu');
+      menu.style.opacity = "0";
+      menu.style.pointerEvents = "none";
+
+      document.body.style.color = "";
+      document.querySelectorAll('a').forEach(link => link.style.color = "");
+      document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(heading => heading.style.color = "");
+      menu.style.backgroundColor = "";
+
+      document.querySelectorAll('*').forEach(element => {
+        if (element.style.border) {
+          element.style.borderColor = "";
+        }
+      });
+
+      // Reset the image source back to stoerer.svg when menu is closed
+      var stoererImg = document.querySelector('img[src="stoerer.svg"]'); // Ensure it's selected again
+      if (stoererImg) {
+        stoererImg.src = "stoerer.svg"; // Revert the image source
+      }
+    });
+  });
+</script>
+
+</html>
