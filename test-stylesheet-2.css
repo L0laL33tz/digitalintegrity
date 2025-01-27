@@ -100,12 +100,12 @@ body {
 
   .item01 a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
   }
 
   .item02 a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
   }
 
   .nav-button:hover a {
@@ -196,6 +196,7 @@ body {
     line-height: 20px;
     display: flex;
     align-items: flex-end;
+    color: #ffffff;
   }
 
   .button   {
